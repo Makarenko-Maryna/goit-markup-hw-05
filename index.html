@@ -56,12 +56,7 @@
             <button  type="button" class="stilyButtom" data-modal-open>Заказать услугу</button>
             </div>
         </section >
-        <!-- backdrop -->
-        <div class="backdrop is-hidden" data-modal>
-            <div class="modal">
-                <button  class="close" data-modal-close>&#x2715</button>
-            </div>
-        </div>
+
         <!--section2-->
         <section class="features-part">
             <div class="conteiner">
@@ -129,28 +124,28 @@
                     <h3 class="h3-team">Игорь Демьяненко</h3>
                     <p>Product Designer</p>
                         <ul class="soсial-link">
-                            <li class="link">
+                            <li>
                                 <a href=""></a>
                                 <!-- <img src="image/icons/insta.svg" alt="insta"> -->
                             <svg class="icon">
                                 <use href="./image/icons/sprite.svg#icon-insta"></use>
                             </svg>
                         </li>
-                        <li class="link">
+                        <li>
                             <a href="" ></a>
                             <!-- <img src="image/icons/twitter.svg" alt="twit"> -->
                             <svg class="icon">
                                 <use href="./image/icons/sprite.svg#icon-twitter"></use>
                             </svg>
                         </li>
-                        <li class="link">
+                        <li>
                             <a href=""></a>
                             <!-- <img src="image/icons/facebook.svg" alt="fb"> -->
                             <svg class="icon">
                                 <use href="./image/icons/sprite.svg#icon-facebook"></use>
                             </svg>
                         </li>
-                        <li class="link">
+                        <li>
                             <a href=""  class="link"></a>
                             <!-- <img src="image/icons/linkedin.svg" alt="in"> -->
                             <svg class="icon">
@@ -273,40 +268,53 @@
                 <h2 class="h2-title">Постоянные клиенты</h2>
                 <ul>
                     <li>
-                        <!-- <a href="#" class="client-icons">
-                            <svg href="./image/icons/symbol-defs2.svg#icon-Client1"> 
-                            </svg> -->
-                            <div class="client-list">
+                        <a href="#" class="client-list">
+                            <svg  class="client-icons">
+                                <use href="./image/icons/sprite.svg#icon-Client1"></use>
+                            </svg>
+                        </a>
+                        <!-- <div class="client-list">
+                            <svg class="client-icons">
+                                <use href="./image/icons/sprite.svg#icon-Client1"></use>
+                            </svg>
+                        </div> -->
+                    </li>
+                    <li>
+                        <a href="#" class="client-list">
+                            <svg class="client-icons">
+                                <use href="./image/icons/sprite.svg#icon-Client2"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="client-list">
+                            <svg class="client-icons">
+                                <use href="./image/icons/sprite.svg#icon-Client3"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="client-list">
+                            <svg class="client-icons">
+                                <use href="./image/icons/sprite.svg#icon-Client4"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="client-list">
+                            <svg class="client-icons">
+                                <use href="./image/icons/sprite.svg#icon-Client5"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="client-list">
+                            <a href="#" class="client-list">
                                 <svg class="client-icons">
-                                    <use href="./image/icons/spite.svg#icon-Client1"></use> 
+                                    <use href="./image/icons/sprite.svg#icon-Client6"></use>
                                 </svg>
-                            </div>
-                        <!-- </a> -->
-                    </li>
-                    <li>
-                        <svg>
-                            <use href="./image/icons/spite.svg#icon-Client2"></use>
-                        </svg>
-                    </li>
-                    <li>
-                        <svg>
-                            <use href="./image/icons/spite.svg#icon-Client3"></use>
-                        </svg>
-                    </li>
-                    <li>
-                        <svg>
-                            <use href="./image/icons/spite.svg#icon-Client4"></use>
-                        </svg>
-                    </li>
-                    <li>
-                        <svg>
-                            <use href="./image/icons/spite.svg#icon-Client5"></use>
-                        </svg>
-                    </li>
-                    <li>
-                        <svg>
-                            <use href="./image/icons/spite.svg#icon-Client6"></use>
-                        </svg>
+                            </a>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -366,9 +374,15 @@
             </div>
         </div>
     </footer>
-    <!-- <script src="./js/modal.js"></script> -->
+            <!-- backdrop -->
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <button class="close" data-modal-close>&#x2715</button>
+                </div>
+            </div>
+    <script src="./js/modal.js"></script>
     <!-- (() => { -->
-        <script>
+        <!-- <script>
             const refs = {
                 openModalBtn: document.querySelector('[data-modal-open]'),
                 closeModalBtn: document.querySelector('[data-modal-close]'),
@@ -381,7 +395,7 @@
             function toggleModal() {
                 refs.modal.classList.toggle('is-hidden');
             }
-            </script>
+            </script> -->
     <!-- })(); -->
 
 </body>

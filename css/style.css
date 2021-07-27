@@ -37,6 +37,7 @@ section {
 .header {
   border-bottom: 1px solid #ececec;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -45,28 +46,16 @@ section {
   font-weight: 700;
   align-items: center;
   margin-right: 92px;
+  margin-top: 24px;
+  margin-bottom: 25px;
   text-decoration: none;
+  font-size: 26px;
+  color: var(--titleColor--);
 }
 
 .span {
   font-family: Raleway;
   color: #2196f3;
-}
-.activPage {
-  color: var(--brendColor--);
-  position: relative;
-}
-
-.activPage::after {
-  display: block;
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  background-color: var(--brendColor--);
-  border-radius: 2px;
-  bottom: -10px;
-  margin-top: 28px;
 }
 
 .nav {
@@ -78,20 +67,21 @@ section {
 .nav-header {
   display: flex;
   justify-content: space-between;
+  font-weight: 500;
 }
 
 .nav-header li {
   margin: 0px 50px 0 50px;
   text-decoration: none;
-  color: var(--titleColor--);
+  /* color: var(--titleColor--); */
 }
 .contact-header a,
 .nav-header a {
   text-decoration: none;
 }
-.nav-header a {
+/* .nav-header a {
   color: var(--titleColor--);
-}
+} */
 
 .contact-header a {
   color: var(--textColor--);
@@ -101,6 +91,7 @@ section {
   display: inline;
   padding: 32px 0 29px 0;
   margin: 0 50 0 50;
+  color: var(--titleColor--);
 }
 
 .navList a:hover,
@@ -113,6 +104,11 @@ section {
   justify-content: space-between;
   padding: 32px 0 29px 0;
 }
+/* .contact-header:hover,
+.contact-header:focus {
+  color: var(--brendColor--);
+
+} */
 
 .contact-em,
 .contact-tel {
@@ -137,6 +133,33 @@ section {
   background-image: url(../image/icons/smartphone.svg);
   width: 10px;
   height: 16px;
+}
+.contact-em a:hover,
+.contact-em a:focus {
+  color: var(--brendColor--);
+  fill: var(--brendColor--);
+}
+.contact-tel a:hover,
+.contact-tel a:focus {
+  color: var(--brendColor--);
+  fill: var(--brendColor--);
+}
+
+.activPage {
+  color: var(--brendColor--);
+  position: relative;
+}
+
+.activPage::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: var(--brendColor--);
+  border-radius: 2px;
+  bottom: -25px;
+  margin-top: 28px;
 }
 /* header */
 
@@ -170,9 +193,8 @@ section {
   margin: 0 auto;
   background-color: var(--brendColor--);
   color: var(--white--);
-  border-radius: 4px;
   padding: 10px 32px;
-  box-shadow: 4px 4px rgb(0 0 0 / 15%);
+  border: none;
 }
 
 .stilyButtom:hover,
@@ -180,8 +202,9 @@ section {
 .portfolio-buttom button:focus {
   background-color: var(--brendColor--);
   color: var(--white--);
-  border-radius: 4px;
+
   cursor: pointer;
+  border: 1px solid var(--sectionColor--);
 }
 
 /* section2 */
@@ -205,13 +228,18 @@ ul {
   margin-right: 30px;
 }
 
+.icon-feat {
+  padding: 25px 100px;
+  background: var(--sectionColor--);
+}
+
 .features-list p {
   font-size: 14px;
+  line-height: 24px;
   margin-top: 10px;
 }
 
 .h3-features {
-  /* height: 14px; */
   color: var(--titleColor--);
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -316,34 +344,34 @@ ul {
 /* section5 */
 
 /* section6 */
-.client-icons {
-  fill: var(--socialLink--);
-  /* transition-property: fill, border; */
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  /* max-width: 100%;
-  fill: currentColor; */
-}
-
 .client ul {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .client-list {
-  /* padding: 16px 32px; */
+  padding: 16px 32px;
   margin-right: 30px;
   display: flex;
   width: 170px;
   height: 92px;
   border-radius: 4px;
   border: 1px solid var(--socialLink--);
-  /* align-items: center; */
+  align-items: center;
 }
+.client-icons {
+  fill: var(--socialLink--);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .client-list:hover {
+  border: 1px solid var(--brendColor--);
+}
+.client-icons:hover {
   transition-property: border, color;
-  /* border: 1px solid var(--accent-color); */
-  fill: tomato;
+  fill: var(--brendColor--);
 }
 
 /* section6 */
@@ -478,8 +506,11 @@ ul {
 }
 
 .contact-footer {
-  color: var(--white--);
   margin-top: 9px;
+}
+
+.contact-footer a {
+  color: var(--socialLink--);
 }
 
 .icon-footer svg {

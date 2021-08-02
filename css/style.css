@@ -635,13 +635,33 @@ ul {
   height: 581px;
   background-color: var(--white--);
 }
-.close {
+.btn-close {
   display: block;
   position: absolute;
-  top: 8px;
-  right: 8px;
-  width: 11px;
-  height: 11px;
+  top: 12px;
+  right: 18px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
-  border: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #fff;
 }
+.btn-close:hover,
+.btn-close:focus {
+  fill: var(--brendColor--);
+}
+.btn-close__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  /* fill: currentColor; */
+}
+/* .menu-open,
+.menu-close {
+  position: absolute;
+  right: 46px;
+  top: 21px;
+  transform: translate(50%, -30%);
+  border: none;
+} */
